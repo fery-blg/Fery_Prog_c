@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i = 0, number;
+    int N, number;
     int product = 1;
     int sum = 0;
     float moy;
@@ -9,13 +9,12 @@ int main() {
     printf("Entrez le nombre de valeurs N : ");
     scanf("%d", &N);
 
-    while (i < N) {
+    for (int i = 0; i < N; i++) {
         printf("Entrez un entier : ");
         scanf("%d", &number);
 
         sum += number;
         product *= number;
-        i++;
     }
 
     moy = (float)sum / N;
